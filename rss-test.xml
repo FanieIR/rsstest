@@ -9,17 +9,19 @@
     <lastBuildDate>Mon, 16 Dec 2025 10:00:00 GMT</lastBuildDate>
 
     <item>
-      <guid>match-001</guid>
-      <pubDate>Mon, 16 Dec 2025 09:55:00 GMT</pubDate>
+  <title>Team 1 vs Team 2</title>
+  <guid>match-001</guid>
+  <pubDate>Mon, 16 Dec 2025 09:55:00 GMT</pubDate>
 
-      <match:team1_name>Team 1</match:team1_name>
-      <match:player1_name>Player 1</match:player1_name>
-      <match:player1_odds>1.85</match:player1_odds>
+  <match:team1_name>Team 1</match:team1_name>
+  <match:player1_name>Player 1</match:player1_name>
+  <match:player1_odds>1.85</match:player1_odds>
 
-      <match:team2_name>Team 2</match:team2_name>
-      <match:player2_name>Player 2</match:player2_name>
-      <match:player2_odds>2.10</match:player2_odds>
-    </item>
+  <match:team2_name>Team 2</match:team2_name>
+  <match:player2_name>Player 2</match:player2_name>
+  <match:player2_odds>2.10</match:player2_odds>
+</item>
+
 
   </channel>
 </rss>
