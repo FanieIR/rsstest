@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:match="https://example.com/rss/match">
-
+<rss version="2.0">
   <channel>
-    <title>Match Odds Feed - Test</title>
-    <link>https://fanbets.co.za</link>
-    <description>RSS feed for email testing</description>
-    <language>en-za</language>
-    <lastBuildDate>Mon, 16 Dec 2025 13:30:00 GMT</lastBuildDate>
+    <title>Test Feed</title>
+    <description>Test feed for TouchBasePro</description>
+    <link>https://fanbets.co.za/</link>
+    <lastBuildDate>Wed, 17 Dec 2025 10:00:00 GMT</lastBuildDate>
 
     <item>
-      <title>Team 1 vs Team 2</title>
-      <link>https://fanbets.co.za</link>
-      <guid isPermaLink="false">match-001</guid>
-      <pubDate>Mon, 16 Dec 2025 13:30:00 GMT</pubDate>
+      <title>Team 1 vs Team 2 Odds</title>
+      <description>
+        Team1: Player1 at 1.85<br/>
+        Team2: Player2 at 2.10
+      </description>
+      <link>https://fanbets.co.za/</link>
+      <pubDate>Wed, 17 Dec 2025 10:00:00 GMT</pubDate>
+      <guid>match-001</guid>
+    </item>
 
-      <!-- REQUIRED FOR EMAIL RSS PARSERS -->
-      <description>Match odds update</description>
-
-      <content:encoded>
-        <![CDATA[
-          Team 1 vs Team 2
-        ]]>
-      </content:encoded>
-
-      <!-- YOUR DATA (STRUCTURED, NO HTML) -->
-      <match:team1_name>Team 1</match:team1_name>
-      <match:player1_name>Player 1</match:player1_name>
-      <match:player1_odds>1.85</match:player1_odds>
-
-      <match:team2_name>Team 2</match:team2_name>
-      <match:player2_name>Player 2</match:player2_name>
-      <match:player2_odds>2.10</match:player2_odds>
-
+    <item>
+      <title>Another Match Test</title>
+      <description>Test story for TouchBasePro RSS import</description>
+      <link>https://fanbets.co.za/</link>
+      <pubDate>Wed, 17 Dec 2025 10:05:00 GMT</pubDate>
+      <guid>match-002</guid>
     </item>
 
   </channel>
