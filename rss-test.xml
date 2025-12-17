@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:match="https://example.com/rss/match">
+
   <channel>
     <title>Match Odds Feed - Test</title>
-    <link>https://github.com/FanieR/rsstest</link>
-    <description>Data-only RSS feed for email testing</description>
+    <link>https://fanbets.co.za</link>
+    <description>RSS feed for email testing</description>
     <language>en-za</language>
-    <lastBuildDate>Mon, 16 Dec 2025 11:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2025 13:30:00 GMT</lastBuildDate>
 
-     <item>
-       <title>Team 1 vs Team 2</title>
-       <description>Match odds update</description>
-       <link>https://fanbets.co.za</link>
-       <guid isPermaLink="false">match-001</guid>
-       <pubDate>Mon, 16 Dec 2025 12:45:00 GMT</pubDate>
-     
-       <match:team1_name>Team 1</match:team1_name>
-       <match:player1_name>Player 1</match:player1_name>
-       <match:player1_odds>1.85</match:player1_odds>
-     
-       <match:team2_name>Team 2</match:team2_name>
-       <match:player2_name>Player 2</match:player2_name>
-       <match:player2_odds>2.10</match:player2_odds>
-     </item>
+    <item>
+      <title>Team 1 vs Team 2</title>
+      <link>https://fanbets.co.za</link>
+      <guid isPermaLink="false">match-001</guid>
+      <pubDate>Mon, 16 Dec 2025 13:30:00 GMT</pubDate>
 
+      <!-- REQUIRED FOR EMAIL RSS PARSERS -->
+      <description>Match odds update</description>
+
+      <content:encoded>
+        <![CDATA[
+          Team 1 vs Team 2
+        ]]>
+      </content:encoded>
+
+      <!-- YOUR DATA (STRUCTURED, NO HTML) -->
+      <match:team1_name>Team 1</match:team1_name>
+      <match:player1_name>Player 1</match:player1_name>
+      <match:player1_odds>1.85</match:player1_odds>
+
+      <match:team2_name>Team 2</match:team2_name>
+      <match:player2_name>Player 2</match:player2_name>
+      <match:player2_odds>2.10</match:player2_odds>
+
+    </item>
 
   </channel>
 </rss>
